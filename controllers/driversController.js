@@ -8,7 +8,7 @@ const fs = require('fs');
 const defaultImage = {
     filename: 'default-image.jpg',
     contentType: 'image/png',
-    url: 'https://limoimage.s3.amazonaws.com/default-image.jpg' // Default image URL
+    url: 'https://limoimage.s3.amazonaws.com/default-image.jpg' 
 };
 
 const createDriver = async (req, res, next) => {
