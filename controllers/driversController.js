@@ -38,7 +38,7 @@ const createDriver = async (req, res, next) => {
         
             images = [defaultImage];
         } else {
-            // Map the uploaded files from S3 to include filenames, content types, and URLs
+            
             images = req.files.map(file => ({
                 filename: file.key,      // S3 stores the file under 'key'
                 contentType: file.mimetype,
